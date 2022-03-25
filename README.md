@@ -26,13 +26,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+The differences between these array methods is that .map will perform a specified action on each element of the array, .reduce will
+attempt to reduce your array to a single value, and .filter will check each element of the array for a value relating to 'truthiness' and discard all other elements not meeting that criteria.
+
+You could use .map to take an array of numbers and multiply each number by a specified amount, returning a new array with the same length and multiplied numbers. You could use .reduce to take an array of objects, with each object containing a population key with a number value, and return a single value that has summed up the population numbers of all of the objects. You could use .filter to take an array of numbers, and check if each number is greater than a specified amount, the result would return a new array with numbers that meet that condition. 
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback is the function that is taken in as the argument for a parameter on a higher order function. 
 
 3. Explain what a closure is.
 
+Closure occurs when a function is created inside of another function. Moreover, this is the act of the inner function reaching outside of its scope to access variables in the lexical environment of its outer function. 
+
 4. Describe the four principles of the 'this' keyword.
 
+The first principle is window binding: When you call 'this' while in the global bounds of your program you will receive the entire window object back. This is because 'this' is not tied to a specific scenario inside of your program. In general, anything defined in the global scope of your program is linked to the window of the program.
+
+The second principle is implicit binding: When using dot notation to call a method, the object to the left of the dot is bound to the call. The 'this' keyword is tied only to the object in this case.
+
+The third principle is new binding: When you are creating an instance of a class, via the reference to a constructor function, you use the 'new' keyword. 'new' tells your program that the context of the 'this' keyword will include the called class.
+
+The fourth principle is explicit binding: When you link different objects together through the use of .call, .bind, or .apply, the context of the 'this' keyword will reference the object being linked. 
+
 5. Why do we need super() in an extended class?
+
+The super keyword finalizes the call to the class being extended. It allows our child class to access the properties and methods of the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
