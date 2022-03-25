@@ -32,10 +32,16 @@ itself with 'myFunction' to access the variable that it needs in order to execut
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let count = 0;
+  for (let i = 0; i < number+1; i++){
+    count += i;
   }
+  return count;
+}
+
+
+console.log('Task 2:',summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
