@@ -41,7 +41,7 @@ function summation(number) {
 }
 
 
-console.log('Task 2:',summation(4));
+//console.log('Topic 1, Task 2:',summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -68,9 +68,15 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    const displayNames = [];
+     array.forEach(data => {
+        displayNames.push(`name: ${data.animal_name}, scientific: ${data.scientific_name}`);
+     })
+     return displayNames;
   }
+
+  //console.log('Topic 2, Request 1:', animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -83,9 +89,12 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    const lowerCase = array.map(data => data.animal_name.toLowerCase());
+    return lowerCase;
   }
+
+  //console.log('Topic 2, Request 2:', lowerCaseNames(zooAnimals));
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -96,9 +105,12 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(array){
+    const lowPop = array.filter(data => data.population < 5);
+    return lowPop;
   }
+
+  //console.log('Topic 2, Request 3:', lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
