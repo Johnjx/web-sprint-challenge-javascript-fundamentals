@@ -17,7 +17,9 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/* There is a closure that is occurring between the inner function 'nestedFunction' and the outer function 'myFunction', which allows the inner function
+to reach outside of its scope and grab the 'internal' variable from the lexical scope of the outer function. 'nestedFunction' is essentially combining
+itself with 'myFunction' to access the variable that it needs in order to execute itself.  */
 
 
 
